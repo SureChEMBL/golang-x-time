@@ -1,0 +1,25 @@
+Source: golang-golang-x-time
+Section: devel
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>,
+           Martín Ferrari <tincho@debian.org>,
+           Tim Potter <tpot@hpe.com>,
+           Michael Stapelberg <stapelberg@debian.org>,
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+               golang-any,
+               golang-golang-x-net-dev,
+Standards-Version: 3.9.8
+Homepage: https://golang.org/x/time/rate
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-golang-x-time.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-golang-x-time.git
+XS-Go-Import-Path: golang.org/x/time
+
+Package: golang-golang-x-time-dev
+Architecture: all
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         golang-golang-x-net-dev,
+Description: Go supplementary time packages
+ Supplementary Go time packages.
